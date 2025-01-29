@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo List</title>
+    <link rel="stylesheet" href="styles/config.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
@@ -12,13 +14,21 @@
     <main>
       <form action="" autocomplete="off">
         <label>
-          <input id="todo" name="todo" placeholder="new ToDo" type="text" />
+          <input
+            id="todo"
+            name="todo"
+            class="todo-input"
+            placeholder="new ToDo"
+            type="text"
+          />
         </label>
         <select name="user" id="user-todo">
           <option disabled selected>select user</option>
         </select>
         <button class="add-btn">Add ToDo</button>
       </form>
+      <ul class="todo-list"></ul>
     </main>
+    <script src="app/main.js"></script>
   </body>
 </html>
