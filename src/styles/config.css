@@ -1,0 +1,39 @@
+:root {
+  --black-green: #343a34;
+  --dark-green: #2a3329;
+  --axolotl: #45624e;
+  --xanadu: #6c8776;
+  --coriander: #c0cfb2;
+  --white-green: #e4e6d9;
+}
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--black-green);
+}
+button {
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 800px) {
+}
