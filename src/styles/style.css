@@ -29,7 +29,7 @@ form * {
   margin-top: 20px;
 }
 
-input {
+.todo-input {
   width: 500px;
   height: 60px;
   border: 5px solid var(--xanadu);
@@ -78,7 +78,15 @@ button {
   border-bottom: 5px solid var(--dark-green);
   transition: all 100ms ease-in-out 100ms;
 }
-
 button:hover {
   border-width: 0;
+}
+.todo-item {
+  color: var(--xanadu);
+  font-size: 15pt;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.close {
+  color: brown;
 }
