@@ -1,11 +1,19 @@
 //global
 const todoList = document.querySelector(".todo-list");
+const userSelect = document.querySelector("#user-todo");
 let todos = [];
 let users = [];
 
 //atach events
 document.addEventListener("DOMContentLoaded", initApp);
 //DOM logic
+function createUserOption(user) {
+  const option = document.createElement("option");
+  option.value = user.id;
+  option.innerText = user.name;
+  userSelect.append(option);
+}
+
 function getUser(userid) {
   console.log(userid);
   const user = users.find((u) => u.id === userid);
@@ -32,6 +40,7 @@ function initApp() {
     [todos, users] = values;
     console.log(todos);
     todos.forEach((el) => printTodo(el));
+    users.forEach((user) => createUserOption(user));
   });
 }
 
